@@ -5,7 +5,7 @@
   "main": "dist/index.js",
   "scripts": {
     "dev": "tsx watch index.ts",
-    "build": "node ./node_modules/tsup/dist/cli-default.js index.ts --format cjs --outDir dist --bundle --sourcemap --clean",
+    "build": "node ./node_modules/tsup/dist/cli-default.js index.ts --format cjs --outDir dist --sourcemap --clean",
     "start": "node dist/index.js"
   },
   "dependencies": {
