@@ -1,0 +1,23 @@
+{
+  "name": "tank-wars-server",
+  "private": true,
+  "type": "commonjs",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "tsx watch index.ts",
+    "build": "tsup index.ts --format cjs --outDir dist --bundle --sourcemap --clean",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "socket.io": "^4.7.5"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.30",
+    "tsup": "^8.0.1",
+    "tsx": "^4.7.2",
+    "typescript": "^5.4.3"
+  }
+}

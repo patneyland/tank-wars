@@ -1,0 +1,14 @@
+{
+  "name": "tank-wars",
+  "private": true,
+  "scripts": {
+    "build": "cd client && npm install && npm run build && cd ../server && npm install && npm run build",
+    "start": "cd server && node dist/index.js",
+    "dev:client": "cd client && npm run dev",
+    "dev:server": "cd server && npm run dev",
+    "dev": "concurrently \"npm run dev:server\" \"npm run dev:client\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.0.1"
+  }
+}

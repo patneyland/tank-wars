@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;600;700&family=Chakra+Petch:wght@400;600&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+  --hud-panel: rgba(4, 9, 16, 0.72);
+  --hud-border: rgba(255, 255, 255, 0.08);
+  --gold: #ffd700;
+  --amber: #f7b733;
+  --fire: #d9483b;
+  --steel: #0b0f15;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Rajdhani", sans-serif;
+  background: #060b12;
+  color: #e8edf5;
+}
+
+#root {
+  min-height: 100vh;
+}
